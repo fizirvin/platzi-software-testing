@@ -1,7 +1,8 @@
 # CSS - Guia de Estilos y Arquitectura
 
 ## Indice
-1. Resumen
+1. Fuentes
+2. Resumen
 2. Organizacion en Archivos
 3. Tabla de Contenidos
 
@@ -13,6 +14,8 @@
 * Encontrar patrones o componentes comunes en el diseño de tu sitio, y construye tu CSS alrededor de ellos.
 * Organizacion en archivos
 * Contruir una tabla de contenidos en el CSS
+* Utilizar selectores con poca especificidad.
+* Evitar encadenar los selectores de clase.
 
 
 
@@ -68,5 +71,21 @@ Buttons..............Button elements.
 
 
 ## Especificidad
+
+### Utilizar especificidad Baja
+
+Errar en el lado del uso de selectores de baja especificidad. Hacen más fácil reutilizar tu CSS, y extienden los patrones de nuevas maneras.
+Por lo que a la hora de utilizar selectores debemos utilizar aquellos que sean lo mas bajo posible.
+
+### EVITAR ENCADENAR LOS SELECTORES DE CLASE
+
+Otra forma de minimizar la especificidad es evitar encadenar los selectores de clase. Los selectores como .message.warning tienen una especificidad de 0,2,0. Una mayor especificidad significa que son difíciles de anular. Además, encadenar clases puede causar efectos secundarios. 
+
+Si te encuentras encadenando selectores, vuelve al tablero de dibujo. O bien el diseño tiene inconsistencias o está encadenando prematuramente en un intento de evitar problemas que no tiene. Los dolores de cabeza de mantenimiento que evitará y la reutilización que obtendrá valen la pena.
+
+### EVITAR EL USO DE SELECTORES DE ID
+HTML sólo permite que cada identificador (es decir, un atributo id) sea usado una vez por documento. Como resultado, los conjuntos de reglas que usan selectores de id son difíciles de reutilizar. Hacer esto típicamente implica usar una lista de selectores de id - por ejemplo, #sidebar-feature, #sidebar-sports, y así sucesivamente.
+
+Los identificadores también tienen un alto grado de especificidad, por lo que necesitaremos selectores más largos para anular las declaraciones. En el CSS que sigue, necesitamos usar #sidebar.sports y #sidebar.local para anular el color de fondo de #sidebar:
 
 ![Especificidad](\images\Especificidad_01.JPG)
