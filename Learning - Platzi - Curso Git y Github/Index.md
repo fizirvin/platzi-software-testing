@@ -52,6 +52,15 @@ Luego de crear un repositorio en github, debemos ejecutar los siguiente comandos
 
 `git commit -m "mensaje de referencia"`
 > COmmit guarda los cambios en el repositorio local
+
+`gir show [Nombre del archivo]`
+>Muestra los ultimos cambios entre la ultima y la ante ultima version.
+
+`git diff [nro commit mas viejo] [otro nro commit mas nuevo] `
+
+>Muestra la diferencia entre dos versiones, se deben pasar los numeros de versiones de los commit.
+
+
 ~~~
 ~~~
 
