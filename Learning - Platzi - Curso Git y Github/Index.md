@@ -18,8 +18,8 @@ Twitter:
 ### 01 - Configurar Git
 Configurar User & Email
 
-`git config --global user.name "Emmanuel Capandegui"`
-`git config --global user.email "ecapandegui@outlook.com"`
+`git config --global user.name "FirstName LastName"`
+`git config --global user.email "user@domain.com"`
 
 Generar clave SSH
 
