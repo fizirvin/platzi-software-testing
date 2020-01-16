@@ -18,8 +18,8 @@ Twitter:
 ### 01 - Configurar Git
 Configurar User & Email
 
-`git config --global user.name "FirstName LastName"`
-`git config --global user.email "user@domain.com"`
+`git config --global user.name "Emmanuel Capandegui"`
+`git config --global user.email "ecapandegui@outlook.com"`
 
 Generar clave SSH
 
@@ -65,10 +65,16 @@ Luego de crear un repositorio en github, debemos ejecutar los siguiente comandos
 
 `git log [nombre del archivo]`
 
+`git log [nombre del archivo] --state`
+
 `git reset [nro de commint] [--hard | --soft]`
 
 >La opccion --hard vuelve los archivos o la version seleccionada, borrando los commit posteriores a ese.
 >La opcion --soft vielve los archivos a la version seleccionada, pero mantiene los archivos que se encuentran en staging.
+
+`git checkout [nro de commit] [nombre del archivo]`
+>Ejemplo git checkpu master documento.txt
+
 ~~~
 ~~~
 

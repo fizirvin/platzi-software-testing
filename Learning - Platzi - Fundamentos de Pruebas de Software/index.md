@@ -76,3 +76,4 @@ __Theory of Constraints:__ en una organización siempre habrán restricciones (m
 3. Subordinar todo lo demás con el fin de solucionar el cuello de botella.
 4. Elevar la capacidad con más maquinaria, personas, etc.
 5. Iterar: siempre habrán más restricciones. Se debe evitar la inercia.
+.
