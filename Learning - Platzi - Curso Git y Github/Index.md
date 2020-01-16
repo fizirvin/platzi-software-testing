@@ -50,8 +50,11 @@ Luego de crear un repositorio en github, debemos ejecutar los siguiente comandos
 >
 > Otro ejemplo es git add * para agregar todos los archivos
 
+![Git Ciclo](.\images\git_02.PNG)
+
+
 `git commit -m "mensaje de referencia"`
-> COmmit guarda los cambios en el repositorio local
+> Commit guarda los cambios en el repositorio local
 
 `gir show [Nombre del archivo]`
 >Muestra los ultimos cambios entre la ultima y la ante ultima version.
@@ -60,12 +63,19 @@ Luego de crear un repositorio en github, debemos ejecutar los siguiente comandos
 
 >Muestra la diferencia entre dos versiones, se deben pasar los numeros de versiones de los commit.
 
+`git log [nombre del archivo]`
 
+`git reset [nro de commint] [--hard | --soft]`
+
+>La opccion --hard vuelve los archivos o la version seleccionada, borrando los commit posteriores a ese.
+>La opcion --soft vielve los archivos a la version seleccionada, pero mantiene los archivos que se encuentran en staging.
 ~~~
 ~~~
 
 
 ## Staging, Repositorio y Ciclo de basico de trabajo en Git
 
-![Git Ciclo](\images\git_01.PNG)
+El "staging area" (Tambien denominado Index) es un area en memoria ram en la cual se agregan los archivos previo al commit. Un archivo que se encuentra en staging se dice que esta en estado __Staged__
+
+![Git Ciclo](.\images\git_01.PNG)
 
