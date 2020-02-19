@@ -36,6 +36,11 @@ Luego de crear un repositorio en github, debemos ejecutar los siguiente comandos
 
 `git pull --rebase origin master`
 
+`git pull origin master --allow-unrelated-histories`
+>Permite fusionar las ramas, para los casos en que arroje error por no ser iguales las historias de las ramas.
+
+`git fetch`
+
 `git push origin master`
 
 
@@ -50,7 +55,7 @@ Luego de crear un repositorio en github, debemos ejecutar los siguiente comandos
 >
 > Otro ejemplo es git add * para agregar todos los archivos
 
-![Git Ciclo](.\images\git_02.PNG)
+![Git Ciclo](images/git_02.PNG)
 
 
 `git commit -m "mensaje de referencia"`
@@ -72,6 +77,17 @@ Luego de crear un repositorio en github, debemos ejecutar los siguiente comandos
 >La opccion --hard vuelve los archivos o la version seleccionada, borrando los commit posteriores a ese.
 >La opcion --soft vielve los archivos a la version seleccionada, pero mantiene los archivos que se encuentran en staging.
 
+### Git RM
+Este comando nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versiones. 
+
+`git rm --cached`
+> Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
+
+`git rm --forced`
+> Elimina los archivos del disco duro. Pero git mantiene le historial por lo que es posible recuperarlo.
+
+### Checkout
+
 `git checkout [nro de commit] [nombre del archivo]`
 >Ejemplo git checkpu master documento.txt
 
@@ -83,5 +99,5 @@ Luego de crear un repositorio en github, debemos ejecutar los siguiente comandos
 
 El "staging area" (Tambien denominado Index) es un area en memoria ram en la cual se agregan los archivos previo al commit. Un archivo que se encuentra en staging se dice que esta en estado __Staged__
 
-![Git Ciclo](.\images\git_01.PNG)
+![Git Ciclo](images/git_01.PNG)
 
